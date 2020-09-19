@@ -8863,7 +8863,7 @@ button:disabled,
   width: 65em;
 }
 
-.spotlights > section:nth-child(2n) {
+.spotlights .rightpanel {
   -moz-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   -webkit-box-orient: horizontal;
@@ -8872,7 +8872,7 @@ button:disabled,
   background-color: #333856;
 }
 
-.spotlights > section:nth-child(2n) > .content {
+.spotlights .rightpanel > .content {
   -moz-align-items: -moz-flex-end;
   -ms-align-items: -ms-flex-end;
   -webkit-box-align: end;
