@@ -9783,8 +9783,6 @@ body.is-menu-visible #menu .inner {
 /* Education section */
 #education {
   min-height: 400px;
-  -webkit-transition: all 5s;
-  transition: all 5s;
 }
 
 #education .flex-container {
@@ -9840,9 +9838,5 @@ body.is-menu-visible #menu .inner {
   z-index: 3;
   top: 0%;
   left: 0%;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=main.css.map */
