@@ -9518,6 +9518,8 @@ body.is-preload #banner > .inner {
 /* Education section */
 #education {
   min-height: 400px;
+  -webkit-transition: all 5s;
+  transition: all 5s;
 }
 
 #education .flex-container {
@@ -9537,18 +9539,42 @@ body.is-preload #banner > .inner {
 
 #education .flex-container .school {
   max-width: 400px;
+  margin: 20px;
   position: relative;
 }
 
-#education .flex-container img {
+#education .flex-container .school img {
   width: 100%;
 }
 
-#education .flex-container header {
+#education .flex-container .school header {
+  display: block;
   position: absolute;
   z-index: 3;
   top: 30%;
   left: 30%;
+}
+
+#education .flex-container .school .content {
+  display: none;
+}
+
+#education .flex-container .school:hover img {
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+#education .flex-container .school:hover header {
+  display: none;
+}
+
+#education .flex-container .school:hover .content {
+  margin: 20px;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 0%;
+  left: 0%;
 }
 
 /* Footer */
