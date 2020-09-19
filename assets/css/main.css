@@ -9807,7 +9807,7 @@ body.is-menu-visible #menu .inner {
 }
 
 #education .flex-container .school {
-  max-width: 400px;
+  max-width: 45%;
   margin: 20px;
   position: relative;
 }
