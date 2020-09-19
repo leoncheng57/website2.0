@@ -9516,6 +9516,10 @@ body.is-preload #banner > .inner {
 }
 
 /* Education section */
+#education {
+  min-height: 400px;
+}
+
 #education .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9531,13 +9535,20 @@ body.is-preload #banner > .inner {
       flex-wrap: wrap;
 }
 
-#education .flex-container div {
+#education .flex-container .school {
   max-width: 400px;
-  border: 1px solid green;
+  position: relative;
 }
 
 #education .flex-container img {
   width: 100%;
+}
+
+#education .flex-container header {
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  left: 30%;
 }
 
 /* Footer */

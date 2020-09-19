@@ -22,19 +22,29 @@
 
 /* Education section */
 #education {
+    min-height: 400px;
+
     .flex-container {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
     
-        div {
+        .school {
             max-width: 400px;
-            border: 1px solid green;
+            position: relative;
         }
 
         img {
             width: 100%;
+        }
+
+        header {
+            position: absolute;
+            z-index: 3;
+            top: 30%;
+            left: 30%;
+            // transform: translate(-50%, -50%);
         }
     }
 }
