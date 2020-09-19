@@ -8809,12 +8809,18 @@ button:disabled,
   background-position: center center;
   background-size: cover;
   border-radius: 0;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   width: 30%;
 }
 
 .spotlights > section > .image img {
+  padding: 30px;
   border-radius: 0;
   display: block;
   width: 100%;
@@ -8853,7 +8859,7 @@ button:disabled,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2em 3em 0.1em 3em ;
+  padding: 4em 3em 2em 3em ;
   width: 70%;
 }
 
