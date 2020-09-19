@@ -22,54 +22,45 @@
 
 /* Education section */
 #education {
-    min-height: 400px;
-    // transition: all 5s;
-
-    .flex-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    
+    .container {
         .school {
-            max-width: 45%;
-            margin: 20px;
-            position: relative;
-
-            img {
-                width: 100%;
-            }
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
     
-            header {
+            .card {
+                min-width: 300px;
+                max-width: 40%;
                 display: block;
-                position: absolute;
-                z-index: 3;
-                top: 30%;
-                left: 30%;
-                // transform: translate(-50%, -50%);
+                position: relative;
+                margin: 20px 0;
+
+                img {
+                    width: 100%;
+                }
+        
+                header {
+                    display: block;
+                    position: absolute;
+                    z-index: 3;
+                    top: 30%;
+                    left: 30%;
+                    // transform: translate(-50%, -50%);
+                }
             }
-    
-            .content {
-                display: none;
+
+            .description {
+                max-width: 40%;
+                min-width: 250px;
+                display: block;
+
+                p {
+                    margin: 20px 0px;
+                }
             }
         }
 
-        .school:hover {
-            img {
-                opacity: 0.3;
-                border-radius: 10px;
-            }
-            header {
-                display: none;
-            }
-            .content {
-                margin: 20px;
-                display: block;
-                position: absolute;
-                z-index: 3;
-                top: 0%;
-                left: 0%;
-            }
-        }
     }
 }
