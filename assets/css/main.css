@@ -9803,7 +9803,7 @@ body.is-menu-visible #menu .inner {
 }
 
 /* Hamburger menu */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   #header nav a {
     display: none;
   }
