@@ -8,6 +8,7 @@
 
 	.icon {
 		@include icon;
+
 		border-bottom: none;
 		position: relative;
 
@@ -64,3 +65,13 @@
 			}
 		}
 	}
+
+	
+	/* Custom styling for icons */
+	.customrounded:before {
+		border-radius: 5px !important;
+	}
+	.socialicon {
+		font-size: 24px;
+	}
+

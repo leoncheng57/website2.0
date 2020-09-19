@@ -1,0 +1,50 @@
+/* Education */
+
+#education {
+    background-color: _palette(bg-alt);
+
+    > * {
+        border-top: solid 1px _palette(border);
+
+        &:first-child {
+            border-top: 0;
+        }
+
+        @include inner;
+    }
+
+    &.alt {
+        background-color: transparent;
+        border-bottom: solid 1px _palette(border);
+    }
+}
+
+
+/* Education section */
+#education {
+    min-height: 400px;
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    
+        .school {
+            max-width: 400px;
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        header {
+            position: absolute;
+            z-index: 3;
+            top: 30%;
+            left: 30%;
+            // transform: translate(-50%, -50%);
+        }
+    }
+}
