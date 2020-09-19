@@ -9787,11 +9787,7 @@ body.is-menu-visible #menu .inner {
 }
 
 /* Education section */
-#education {
-  min-height: 400px;
-}
-
-#education .flex-container {
+#education .container .school {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9799,6 +9795,9 @@ body.is-menu-visible #menu .inner {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -9806,17 +9805,19 @@ body.is-menu-visible #menu .inner {
       flex-wrap: wrap;
 }
 
-#education .flex-container .school {
-  max-width: 400px;
-  margin: 20px;
+#education .container .school .card {
+  min-width: 300px;
+  max-width: 40%;
+  display: block;
   position: relative;
+  margin: 20px 0;
 }
 
-#education .flex-container .school img {
+#education .container .school .card img {
   width: 100%;
 }
 
-#education .flex-container .school header {
+#education .container .school .card header {
   display: block;
   position: absolute;
   z-index: 3;
@@ -9824,25 +9825,13 @@ body.is-menu-visible #menu .inner {
   left: 30%;
 }
 
-#education .flex-container .school .content {
-  display: none;
-}
-
-#education .flex-container .school:hover img {
-  opacity: 0.3;
-  border-radius: 10px;
-}
-
-#education .flex-container .school:hover header {
-  display: none;
-}
-
-#education .flex-container .school:hover .content {
-  margin: 20px;
+#education .container .school .description {
+  max-width: 40%;
+  min-width: 250px;
   display: block;
-  position: absolute;
-  z-index: 3;
-  top: 0%;
-  left: 0%;
+}
+
+#education .container .school .description p {
+  margin: 20px 0px;
 }
 /*# sourceMappingURL=main.css.map */
