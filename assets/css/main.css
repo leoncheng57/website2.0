@@ -9483,6 +9483,59 @@ body.is-preload #banner > .inner {
   }
 }
 
+/* Education */
+#education {
+  background-color: #2a2f4a;
+}
+
+#education > * {
+  border-top: solid 1px rgba(212, 212, 255, 0.1);
+}
+
+#education > *:first-child {
+  border-top: 0;
+}
+
+#education > * > .inner {
+  padding: 4em 0 2em 0 ;
+  margin: 0 auto;
+  max-width: 65em;
+  width: calc(100% - 6em);
+}
+
+@media screen and (max-width: 736px) {
+  #education > * > .inner {
+    padding: 3em 0 1em 0 ;
+    width: calc(100% - 3em);
+  }
+}
+
+#education.alt {
+  background-color: transparent;
+  border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+}
+
+/* Education section */
+#education .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#education .flex-container div {
+  max-width: 400px;
+  /* border: 2px solid gray; */
+}
+
 /* Footer */
 #footer .copyright {
   font-size: 0.8em;
@@ -9714,5 +9767,37 @@ body.is-menu-visible #menu .inner {
   transform: none;
   opacity: 1;
   visibility: visible;
+}
+
+/* Navbar responsiveness (hamburger vs nonhamburger */
+/* Nonhamburger menu */
+#header nav a {
+  display: block;
+}
+
+#header nav a:last-child {
+  padding-right: 3.75em !important;
+}
+
+#header nav span {
+  display: block;
+}
+
+#header nav a[href="#menu"] {
+  display: none;
+}
+
+/* Hamburger menu */
+@media screen and (max-width: 480px) {
+  #header nav a {
+    display: none;
+  }
+  #header nav span {
+    display: none;
+  }
+  #header nav a[href="#menu"] {
+    visibility: visible;
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

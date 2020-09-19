@@ -1,0 +1,33 @@
+/* Education */
+
+#education {
+    background-color: _palette(bg-alt);
+
+    > * {
+        border-top: solid 1px _palette(border);
+
+        &:first-child {
+            border-top: 0;
+        }
+
+        @include inner;
+    }
+
+    &.alt {
+        background-color: transparent;
+        border-bottom: solid 1px _palette(border);
+    }
+}
+
+
+/* Education section */
+#education .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#education .flex-container div {
+    max-width: 400px;
+    /* border: 2px solid gray; */
+}
