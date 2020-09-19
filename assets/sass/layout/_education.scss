@@ -21,13 +21,20 @@
 
 
 /* Education section */
-#education .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-#education .flex-container div {
-    max-width: 400px;
-    /* border: 2px solid gray; */
+#education {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    
+        div {
+            max-width: 400px;
+            border: 1px solid green;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
 }
