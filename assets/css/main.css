@@ -9483,100 +9483,6 @@ body.is-preload #banner > .inner {
   }
 }
 
-/* Education */
-#education {
-  background-color: #2a2f4a;
-}
-
-#education > * {
-  border-top: solid 1px rgba(212, 212, 255, 0.1);
-}
-
-#education > *:first-child {
-  border-top: 0;
-}
-
-#education > * > .inner {
-  padding: 4em 0 2em 0 ;
-  margin: 0 auto;
-  max-width: 65em;
-  width: calc(100% - 6em);
-}
-
-@media screen and (max-width: 736px) {
-  #education > * > .inner {
-    padding: 3em 0 1em 0 ;
-    width: calc(100% - 3em);
-  }
-}
-
-#education.alt {
-  background-color: transparent;
-  border-bottom: solid 1px rgba(212, 212, 255, 0.1);
-}
-
-/* Education section */
-#education {
-  min-height: 400px;
-  -webkit-transition: all 5s;
-  transition: all 5s;
-}
-
-#education .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#education .flex-container .school {
-  max-width: 400px;
-  margin: 20px;
-  position: relative;
-}
-
-#education .flex-container .school img {
-  width: 100%;
-}
-
-#education .flex-container .school header {
-  display: block;
-  position: absolute;
-  z-index: 3;
-  top: 30%;
-  left: 30%;
-}
-
-#education .flex-container .school .content {
-  display: none;
-}
-
-#education .flex-container .school:hover img {
-  opacity: 0.3;
-  border-radius: 10px;
-}
-
-#education .flex-container .school:hover header {
-  display: none;
-}
-
-#education .flex-container .school:hover .content {
-  margin: 20px;
-  display: block;
-  position: absolute;
-  z-index: 3;
-  top: 0%;
-  left: 0%;
-}
-
 /* Footer */
 #footer .copyright {
   font-size: 0.8em;
@@ -9840,6 +9746,100 @@ body.is-menu-visible #menu .inner {
     visibility: visible;
     display: block;
   }
+}
+
+/* Education */
+#education {
+  background-color: #2a2f4a;
+}
+
+#education > * {
+  border-top: solid 1px rgba(212, 212, 255, 0.1);
+}
+
+#education > *:first-child {
+  border-top: 0;
+}
+
+#education > * > .inner {
+  padding: 4em 0 2em 0 ;
+  margin: 0 auto;
+  max-width: 65em;
+  width: calc(100% - 6em);
+}
+
+@media screen and (max-width: 736px) {
+  #education > * > .inner {
+    padding: 3em 0 1em 0 ;
+    width: calc(100% - 3em);
+  }
+}
+
+#education.alt {
+  background-color: transparent;
+  border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+}
+
+/* Education section */
+#education {
+  min-height: 400px;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+}
+
+#education .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#education .flex-container .school {
+  max-width: 400px;
+  margin: 20px;
+  position: relative;
+}
+
+#education .flex-container .school img {
+  width: 100%;
+}
+
+#education .flex-container .school header {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  left: 30%;
+}
+
+#education .flex-container .school .content {
+  display: none;
+}
+
+#education .flex-container .school:hover img {
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+#education .flex-container .school:hover header {
+  display: none;
+}
+
+#education .flex-container .school:hover .content {
+  margin: 20px;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 0%;
+  left: 0%;
 }
 
 html {
