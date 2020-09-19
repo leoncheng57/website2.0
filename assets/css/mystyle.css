@@ -28,14 +28,6 @@
 
 
 
-/* Fontawesome icons with custom rounding */
-.customrounded:before {
-    border-radius: 5px !important;
-}
-.socialicon {
-    font-size: 24px;
-}
-
 
 /* Education section */
 #education .flex-container {
