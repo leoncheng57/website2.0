@@ -9841,4 +9841,8 @@ body.is-menu-visible #menu .inner {
     display: block;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
 /*# sourceMappingURL=main.css.map */
