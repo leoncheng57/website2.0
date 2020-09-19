@@ -60,13 +60,23 @@
 				}
 			}
 
-			&:nth-child(2n) {
-				@include vendor('flex-direction', 'row-reverse');
-				background-color: desaturate(lighten(_palette(bg-alt), 4), 2);
+			// &:nth-child(2n) {
+			// 	@include vendor('flex-direction', 'row-reverse');
+			// 	background-color: desaturate(lighten(_palette(bg-alt), 4), 2);
 
-				> .content {
-					@include vendor('align-items', 'flex-end');
-				}
+			// 	> .content {
+			// 		@include vendor('align-items', 'flex-end');
+			// 	}
+			// }
+
+		}
+
+		.rightpanel {
+			@include vendor('flex-direction', 'row-reverse');
+			background-color: desaturate(lighten(_palette(bg-alt), 4), 2);
+
+			> .content {
+				@include vendor('align-items', 'flex-end');
 			}
 		}
 
