@@ -1,30 +1,10 @@
-doctype html
-//
-  Forty by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-html
-  head
-    title Leon Cheng
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+extends _base.pug
+
+block cssImports
     link(rel="stylesheet" href="assets/css/main.css")
     link(rel="stylesheet" href="assets/css/onlylandingpage.css")
-    noscript
-      link(rel="stylesheet" href="assets/css/noscript.css")
-    // Favicon
-    link(rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png")
-    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png")
-    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png")
-    link(rel="manifest" href="assets/favicon_io/site.webmanifest")
-    // Global site tag (gtag.js) - Google Analytics
-    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-178477487-1")
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-178477487-1');
-  body.is-preload
+
+block htmlBody
     // Wrapper
     #wrapper
       // Header
@@ -47,7 +27,7 @@ html
             h1 Experiences
           .content
             p
-              | A collection of work, activities, research, etc.
+              | A collection of my work, activities, research, etc.
       // Main
       #main
         // Anthony
@@ -69,9 +49,9 @@ html
                 p
                   ul
                     li
-                      | Purpose: Built for a friend's personal use. He was losing access to his WordPress-created website and wanted a way to port it over to a different host. So I set out to coding it up for fun and completely built up a changeable replica website for him.
+                      | Built for a friend's personal use. Anthony was losing access to his WordPress-created website and wanted a way to port it over to a different host. I set out to coding it up for fun and completely built up a changeable replica website.
                     li
-                      | Repo found on my GitHub: 
+                      | Repo can found on GitHub: 
                       a(href="https://github.com/leoncheng57/achengs-website")
                         | achengs-website
         // Yext
@@ -313,11 +293,3 @@ html
                   ul
                     li
                       | Recruited 12 companies as sponsors including Digital Ocean, Wolfram, MIT Launch, and Amazon Alexa. Raised funds exceeding $1100 as well as prizes for 4 teams
-    // Scripts
-    script(src="assets/js/jquery.min.js")
-    script(src="assets/js/jquery.scrolly.min.js")
-    script(src="assets/js/jquery.scrollex.min.js")
-    script(src="assets/js/browser.min.js")
-    script(src="assets/js/breakpoints.min.js")
-    script(src="assets/js/util.js")
-    script(src="assets/js/main.js")
