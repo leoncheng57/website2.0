@@ -9834,4 +9834,8 @@ body.is-menu-visible #menu .inner {
 #education .container .school .description p {
   margin: 20px 0px;
 }
+
+.invisible {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
