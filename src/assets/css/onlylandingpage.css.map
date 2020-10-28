@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,AAAA,IAAI,CAAC;EACD,eAAe,EAAE,MAAM;CAC1B",
-    "sources": [
-        "../sass/onlylandingpage.scss"
-    ],
-    "names": [],
-    "file": "onlylandingpage.css"
-}

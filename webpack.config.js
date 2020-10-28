@@ -70,6 +70,10 @@ const config = {
             filename: 'index.html',
             template: 'src/index.pug',
         }),
+        new HtmlWebpackPlugin({
+            filename: 'landing.html',
+            template: 'src/landing.pug',
+        }),
         new MiniCssExtractPlugin({
             filename: "bundle.css"
         })
