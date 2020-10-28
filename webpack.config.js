@@ -36,6 +36,11 @@ const scss = {
     ]
 }
 
+const fonts = {
+    test: /\.(eot|svg|ttf|woff|woff2)$/,
+    loader: 'file-loader?name=/fonts/[name].[ext]'
+}
+
 const imgs = {
     test: /\.(png|jpe?g|gif|svg)$/,
     use: [
@@ -52,7 +57,7 @@ const imgs = {
 const config = {
     entry: './src/index.js',
     module: {
-        rules: [pug, js, scss, imgs]
+        rules: [pug, js, scss, fonts, imgs]
     },
     resolve: {
         extensions: [ '.js' ],
