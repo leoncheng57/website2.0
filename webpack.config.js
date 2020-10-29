@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const LiveReloadPlugin = require('webpack-livereload-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -63,6 +64,11 @@ const config = {
         extensions: [ '.js' ],
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            jQuery: path.resolve(__dirname, "src/assets/js/jquery.min.js"),
+            breakpoints: path.resolve(__dirname, "src/assets/js/breakpoints.min.js"),
+            browser: path.resolve(__dirname, "src/assets/js/browser.min.js")
+        }),
         new LiveReloadPlugin({
             appendScriptTag: true
         }),
