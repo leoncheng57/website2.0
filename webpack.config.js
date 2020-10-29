@@ -26,7 +26,6 @@ const scss = {
     use: [
         {loader: MiniCssExtractPlugin.loader},
         {loader: "css-loader"},
-        {loader: "postcss-loader"},
         {
             // First we transform SASS to standard CSS
             loader: "sass-loader",
@@ -39,7 +38,6 @@ const scss = {
 
 const fonts = {
     test: /\.(eot|svg|ttf|woff|woff2)$/,
-    // loader: 'file-loader?name=/fonts/[name].[ext]'
     use: [
         {
             loader: "file-loader",
@@ -57,12 +55,12 @@ const imgs = {
         {
             loader: "file-loader",
             options: {
+                name: '[name].[ext]',
                 outputPath: 'images'
             }
         }
     ]
 }
-
 
 const config = {
     entry: './src/index.js',
@@ -84,10 +82,12 @@ const config = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.pug',
+            favicon: "./src/images/favicon.png",
         }),
         new HtmlWebpackPlugin({
             filename: 'landing.html',
             template: 'src/landing.pug',
+            favicon: "./src/images/favicon.png",
         }),
         new MiniCssExtractPlugin({
             filename: "bundle.css"
