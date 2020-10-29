@@ -39,7 +39,16 @@ const scss = {
 
 const fonts = {
     test: /\.(eot|svg|ttf|woff|woff2)$/,
-    loader: 'file-loader?name=/fonts/[name].[ext]'
+    // loader: 'file-loader?name=/fonts/[name].[ext]'
+    use: [
+        {
+            loader: "file-loader",
+            options: {
+                name: '[name].[ext]',
+                outputPath: 'webfonts'
+            }
+        }
+    ]
 }
 
 const imgs = {
