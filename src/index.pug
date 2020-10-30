@@ -14,6 +14,8 @@ block htmlBody
           a.hamburger(href="#menu") Menu
           a.next(href="#banner") top
           span |
+          a.next(href="#projects") projects
+          span |
           a.next(href="#experience") experience
           span |
           a.next(href="#bio") bio
@@ -26,6 +28,8 @@ block htmlBody
         ul.links
           li
             a.next.scrolly(href="#banner") top
+          li
+            a.next.scrolly(href="#projects") projects
           li
             a.next.scrolly(href="#experience") experience
           li
@@ -45,15 +49,30 @@ block htmlBody
                 | I am a fullstack engineer/developer.
       // Main
       #main
-        // Experiences
-        section#experience.tiles
+        // Projects
+        section#projects.tiles
+          div.sectionTitle Projects
+          div.colorPlaceholder 
+          article
+            span.image
+              img(src="<tbd>" alt="")
+            header.major
+              h3
+                a.link(href="<tbd>") Maynooth Furniture Mockup
+              p Design
           article
             span.image
               img(src="images/showcase/anthony.png" alt="")
             header.major
               h3
                 a.link(href="landing.html#anthony-section") Anthony's Website
-              p [Project]
+              p Frontend Dev
+        // Experiences
+        section#experience.tiles
+          div.sectionTitle Experiences
+          div.colorPlaceholder 
+          div.colorPlaceholder 
+          div.colorPlaceholder 
           article
             span.image
               img(src="images/pic02.jpg" alt="")

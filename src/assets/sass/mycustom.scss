@@ -1,0 +1,15 @@
+// Don't use this on the main page because it interferes with the jquery.scrolly
+html {
+    scroll-behavior: smooth;
+}
+
+.sectionTitle {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+
+    font-size: 50px;
+    font-weight: 600;
+}
