@@ -1,5 +1,5 @@
 import './assets/sass/main.scss';
-import "./assets/sass/onlylandingpage.scss";
+import "./assets/sass/mycustom.scss";
 import "./assets/sass/noscript.scss";
 
 import "./assets/js/jquery.min.js";
