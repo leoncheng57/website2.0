@@ -12,4 +12,14 @@ import "./assets/js/main.js";
 
 import "./flipdown/src/flipdown.css";
 import {FlipDown} from "./flipdown/src/flipdown";
-new FlipDown(3538137672).start();
+
+
+const convert = (date) => {
+    return (date.getTime() / 1000) + 1;
+}
+
+const goalDate = convert(new Date("2021-01-03T00:00"));
+
+new FlipDown(goalDate, {
+    theme: "light",
+}).start();
