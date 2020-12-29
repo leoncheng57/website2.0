@@ -89,6 +89,11 @@ const config = {
             template: 'src/landing.pug',
             favicon: "./src/images/favicon.png",
         }),
+        new HtmlWebpackPlugin({
+            filename: 'soon.html',
+            template: 'src/isabella-timer.pug',
+            favicon: "./src/images/favicon.png",
+        }),
         new MiniCssExtractPlugin({
             filename: "bundle.css"
         })
