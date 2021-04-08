@@ -9,14 +9,12 @@ block htmlBody
       header#header.alt
         a.logo(href="index.html")
           strong Leon Cheng
-          span Fullstack Engineer
+          span Frontend Developer
         nav
           a.hamburger(href="#menu") Menu
           a.next(href="#banner") top
           span |
           a.next(href="#experience") experience
-          span |
-          a.next(href="#bio") bio
           span |
           a.next(href="#education") education
           span |
@@ -29,9 +27,6 @@ block htmlBody
           li
             a.next.scrolly(href="#experience") experience
           li
-            a.next.scrolly(href="#bio") bio
-          li
-          li
             a.next.scrolly(href="#education") education
           li
             a.next.scrolly(href="#contact") contact
@@ -41,8 +36,9 @@ block htmlBody
             header.major
                 h1 Leon Cheng
             .content
-                p
-                | I am a fullstack engineer/developer.
+                p Frontend developer
+            .more 
+                p I also have experience in UI design, UX research, and fullstack development.
       // Main
       #main
         // Experiences
@@ -53,6 +49,13 @@ block htmlBody
             header.major
               h3
                 a.link(href="landing.html#upstyling-section") Upstyling Nonprofit Website
+              p [Project]
+          article
+            span.image
+              img(src="images/showcase/solstice.png" alt="")
+            header.major
+              h3
+                a.link(href="landing.html#solstice-section") Solstice Fayemz Design
               p [Project]
           article
             span.image
@@ -165,18 +168,6 @@ block htmlBody
               h3
                 a.link(href="landing.html#stuyhacks-section") StuyHacks
               p [Hackathon]
-        // bio
-        section#bio
-          .inner
-            center
-              h2  ~ Born and Raised in New York City ~ 
-              p
-                | I have recently enjoyed working with React and Sass and getting to learn more about how to design good websites. Something about building it yourself and seeing the graphics come together in harmony is very satisfying.
-                | I also like to get myself involved with research that allows me to tinker with my hands and think about how technology affects the average person. Putting together prototypes is fun and getting user feedback always helps us to better listen to our customer's needs, which has made MIT's HCIE lab group a great fit for me.  
-                br
-              p
-                | While I am still searching for the best way I can make an impact on the world,
-                | I am most motivated when I feel like an important contributor to the team. I enjoy being able to directly help make someone happier, whether it be a customer or a fellow coworker. Often, I am eager to take on tasks that require learning about new topics and people describe me as consistently a benefit to a team.
         // Education
         section#education
           .inner
@@ -220,23 +211,20 @@ block htmlBody
             h2 Skills
             strong Most Frequent
             br
-            | 								Python · React · Java  
+            | 								Python · React · Java · Figma · Adobe XD
             br
             br
             strong Occassional Use
             br
             | 								Flask · JavaScript · MySQL · MongoDB · HTML ·
-            | 								CSS · Sass · Pug 
+            | 								CSS · Sass · Pug · Ubuntu
             br
             br
-            strong Have Encountered
+            strong Limited
             br
-            | 								Assembly · Arduino · C · C++ · Scheme · Processing · Grasshopper 
+            | 								Arduino · C · C++ · Processing 
             br
             br
-            strong Other
-            br
-            | 								Adobe XD · Ubuntu · AutoCAD · Rhino · LaTeX · OneNote
           section.split
             section
               .contact-method
@@ -244,19 +232,6 @@ block htmlBody
                 h3 Email
                 a(href="mailto:leonc@mit.edu") leonc@mit.edu
                 br
-                br
-                strong  [The best way to contact me] 
-            section
-              .contact-method
-                span.icon.solid.alt.fa-home.customrounded
-                h3 Address
-                | 										Usually 
-                span
-                  | somewhere in New York City
-                  br
-                  br
-                  | 										Otherwise, still in the New England region of the US 
-                  br
             section
               ul.icons
                 h3 Other Socials
